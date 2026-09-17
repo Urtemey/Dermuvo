@@ -111,6 +111,7 @@ try
     assertions += AnalysisSuite.Run(root);
     assertions += ArchitectureSuite.Run(root);
     assertions += GenericIdentitySuite.Run(root);
+    assertions += StackEdgeSuite.Run(root);
     assertions += StringVmSuite.Run(root, native: false);
     assertions += VmSuite.Run(input, root);
     assertions += EncryptedVmSuite.Run(root, native: false);

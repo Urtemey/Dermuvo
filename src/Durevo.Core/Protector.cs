@@ -112,7 +112,7 @@ public static class Protector
                     integers++;
                 }
             }
-            blocks += PermuteBlocks(m);
+            if (PermutationSafety.CanReorder(m)) blocks += PermuteBlocks(m);
             m.Body.MaxStackSize += 2;
             m.DebugInformation.SequencePoints.Clear();
             m.DebugInformation.Scope = null;
