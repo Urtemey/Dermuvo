@@ -1,0 +1,1 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><OutputType>Exe</OutputType></PropertyGroup><ItemGroup><ProjectReference Include="../../src/Durevo.Core/Durevo.Core.csproj"/><ProjectReference Include="../Durevo.Fixture/Durevo.Fixture.csproj"/></ItemGroup><ItemGroup><None Update="Fixtures/**" CopyToOutputDirectory="PreserveNewest"/></ItemGroup></Project>

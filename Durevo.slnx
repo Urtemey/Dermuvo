@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Durevo.Cli/Durevo.Cli.csproj" />
+    <Project Path="src/Durevo.Core/Durevo.Core.csproj" />
+    <Project Path="src/Durevo.Runtime/Durevo.Runtime.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Durevo.Fixture/Durevo.Fixture.csproj" />
+    <Project Path="tests/Durevo.Tests/Durevo.Tests.csproj" />
+  </Folder>
+</Solution>

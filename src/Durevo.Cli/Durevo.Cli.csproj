@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Durevo.Core/Durevo.Core.csproj"/>
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.7.0" GeneratePathProperty="true"/>
+    <PackageReference Include="Mono.Cecil" Version="0.11.6" GeneratePathProperty="true"/>
+    <Content Include="$(PkgMono_Cecil)/lib/netstandard2.0/Mono.Cecil.dll" Link="runtime-dependencies/Mono.Cecil.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest"/>
+    <Content Include="../../third-party/Mono.Cecil.LICENSE.txt" Link="runtime-dependencies/Mono.Cecil.LICENSE.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest"/>
+    <!-- The CLI itself runs on .NET 10. Distributed Unity dependencies must use netstandard. -->
+    <Content Include="$(PkgBouncyCastle_Cryptography)/lib/netstandard2.0/BouncyCastle.Cryptography.dll"
+             Link="runtime-dependencies/BouncyCastle.Cryptography.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest"/>
+    <Content Include="$(PkgBouncyCastle_Cryptography)/LICENSE.md"
+             Link="runtime-dependencies/BouncyCastle.LICENSE.md" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest"/>
+  </ItemGroup>
+</Project>
